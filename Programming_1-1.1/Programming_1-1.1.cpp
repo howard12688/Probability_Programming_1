@@ -10,6 +10,7 @@ int main(void) {
 
 	int max = 8000;
 	int winCount = 0, loseCount = 0;
+	double winPro = 0.0, losePro = 0.0;
 	int i = 0, random = 0;
 	ofs.open("output.txt");
 
@@ -31,8 +32,10 @@ int main(void) {
 		}
 		cout << "Win: " << winCount << endl;
 		cout << "Lose: " << loseCount << endl;
-		ofs << winCount << " " << loseCount << endl;
-
+		
+		winPro = (double)winCount / 8000;
+		losePro = (double)loseCount / 8000;
+		ofs << scientific << winPro << " " << scientific << losePro << endl;
 	}
 	return 0;
 }

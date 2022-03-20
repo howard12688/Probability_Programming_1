@@ -17,7 +17,7 @@ float combination(int  n, int k) {
 	for (int i = 1; i <= (n-k); i++) {
 		factorial_nk *= i;//cout << factorial_nk << endl;
 	}
-	cout << factorial_n / factorial_k / factorial_nk << endl;
+	//cout << factorial_n / factorial_k / factorial_nk << endl;
 	return factorial_n / factorial_k / factorial_nk;
 }
 
